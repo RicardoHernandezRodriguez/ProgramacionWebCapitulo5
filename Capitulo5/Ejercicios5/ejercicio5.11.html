@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 5.11</title>
+        <style type="text/css">
+            #fusion { position: relative;
+                      width: 300px;
+                      height: 300px;
+                      margin: 0 auto; }
+            #fusion img { position: absolute;
+                          left: 0;
+                          top: 0;
+                          width: 300px;
+                          height: 300px;
+                          transition: opacity 3s linear; }
+            #fusion:hover img.capa5 { opacity: 0; transition-delay: 0s; }
+            #fusion:hover img.capa4 { opacity: 0; transition-delay: 3s; }
+            #fusion:hover img.capa3 { opacity: 0; transition-delay: 6s; }
+            #fusion:hover img.capa2 { opacity: 0; transition-delay: 9s; }
+        </style>
+    </head>
+    <body>
+        <p><a href="../ejercicios5.html">Indice ejercicios</a> <a href="ejercicio5.10.html">Anterior ejercicio</a> <a href="ejercicio5.12.html">Siguiente ejercicio</a></p>
+        <hr>
+        <h1>Ejercicio 5.11: Fusionar im&aacute;genes</h1>
+        <p>Deja el mouse quieto sobre la imagen: las capas se ir&aacute;n desvaneciendo una por una, en cadena, hasta revelar la primera.</p>
+        <hr>
+        <div id="fusion">
+            <img class="capa1" src="https://picsum.photos/seed/foto1/300/300" alt="Foto 1, la mas antigua">
+            <img class="capa2" src="https://picsum.photos/seed/foto2/300/300" alt="Foto 2">
+            <img class="capa3" src="https://picsum.photos/seed/foto3/300/300" alt="Foto 3">
+            <img class="capa4" src="https://picsum.photos/seed/foto4/300/300" alt="Foto 4">
+            <img class="capa5" src="https://picsum.photos/seed/foto5/300/300" alt="Foto 5, la mas reciente">
+        </div>
+    </body>
+</html>

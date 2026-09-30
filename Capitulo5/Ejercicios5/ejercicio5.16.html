@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 5.16</title>
+        <style type="text/css">
+            p { margin: 0.9em 0em; }
+            div.multicolumna {
+                -webkit-column-count: 3;
+                -moz-column-count: 3;
+                column-count: 3;
+                -webkit-column-gap: 30px;
+                -moz-column-gap: 30px;
+                column-gap: 30px;
+                -webkit-column-rule: 1px outset black;
+                -moz-column-rule: 1px outset black;
+                column-rule: 1px outset black; }
+            @media only screen and (max-width: 480px) {
+                div.multicolumna {
+                    -webkit-column-count: 1;
+                    -moz-column-count: 1;
+                    column-count: 1; }
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="../ejercicios5.html">Indice ejercicios</a> <a href="ejercicio5.15.html">Anterior ejercicio</a> Siguiente ejercicio</p>
+        <hr>
+        <h1>Ejercicio 5.16: Consultas de medios</h1>
+        <hr>
+        <header>
+            <h2>Mi p&aacute;gina multicolumna</h2>
+        </header>
+        <div class="multicolumna">
+            <p>Este texto se distribuye en tres columnas cuando la ventana del
+               navegador es ancha (m&aacute;s de 480px). Al reducir el ancho de la
+               ventana a 480px o menos (como en un tel&eacute;fono m&oacute;vil), la
+               consulta de medios cambia el n&uacute;mero de columnas a una sola,
+               para que el texto sea m&aacute;s f&aacute;cil de leer sin necesidad de
+               hacer scroll horizontal.</p>
+            <p>Puedes probar este comportamiento redimensionando la ventana de tu
+               navegador de escritorio hasta hacerla muy angosta, o abriendo esta
+               p&aacute;gina directamente desde tu tel&eacute;fono.</p>
+            <p>Las consultas de medios son la base del dise&ntilde;o web responsivo,
+               una t&eacute;cnica que permite que una misma p&aacute;gina se adapte
+               autom&aacute;ticamente a distintos tama&ntilde;os de pantalla sin
+               necesidad de crear versiones separadas del sitio.</p>
+        </div>
+    </body>
+</html>

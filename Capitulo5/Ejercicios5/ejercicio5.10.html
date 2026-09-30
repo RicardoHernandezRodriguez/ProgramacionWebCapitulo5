@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 5.10</title>
+        <style type="text/css">
+            .skew .textbox { margin-left: 75px;
+                              background: lightgreen;
+                              height: 100px;
+                              width: 200px;
+                              padding: 25px 0;
+                              text-align: center;
+                              font-size: 250%;
+                              border: 3px solid DarkGreen;
+                              border-radius: 15px;
+                              -webkit-animation: inclinarvh 4s infinite alternate;
+                              -moz-animation: inclinarvh 4s infinite alternate;
+                              animation: inclinarvh 4s infinite alternate; }
+            @-webkit-keyframes inclinarvh {
+                0%   { -webkit-transform: skewY(0deg); }
+                50%  { -webkit-transform: skewY(30deg); }
+                50.01% { -webkit-transform: skewX(0deg); }
+                100% { -webkit-transform: skewX(30deg); }
+            }
+            @-moz-keyframes inclinarvh {
+                0%   { -moz-transform: skewY(0deg); }
+                50%  { -moz-transform: skewY(30deg); }
+                50.01% { -moz-transform: skewX(0deg); }
+                100% { -moz-transform: skewX(30deg); }
+            }
+            @keyframes inclinarvh {
+                0%   { transform: skewY(0deg); }
+                50%  { transform: skewY(30deg); }
+                50.01% { transform: skewX(0deg); }
+                100% { transform: skewX(30deg); }
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="../ejercicios5.html">Indice ejercicios</a> <a href="ejercicio5.9.html">Anterior ejercicio</a> <a href="ejercicio5.11.html">Siguiente ejercicio</a></p>
+        <hr>
+        <h1>Ejercicio 5.10: Inclinaci&oacute;n</h1>
+        <hr>
+        <div class="box skew">
+            <div class="textbox">Inclinar texto</div>
+        </div>
+    </body>
+</html>

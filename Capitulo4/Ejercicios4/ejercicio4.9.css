@@ -1,0 +1,20 @@
+/* ejercicio4.9.css */
+/* Boton de navegacion */
+.boton {
+    width: 150px;
+    text-align: center;
+    border: 2px solid RoyalBlue;
+    background-color: RoyalBlue;
+    padding: .5em; }
+
+.boton a {
+    color: white;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    font-weight: bold; }
+
+.boton:hover {
+    background-color: white; }
+
+.boton:hover a {
+    color: RoyalBlue; }
